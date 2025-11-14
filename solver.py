@@ -39,11 +39,16 @@ class Solver:
         matches = self.find_matches(temp)
         score = 0
         if matches:
+            lengths = [len(g) for g in matches]
+            max_len = max(lengths) if lengths else 0
             unique_cells = set()
             for group in matches:
                 for cell in group:
                     unique_cells.add(cell)
-            score = len(unique_cells) + (len(matches)-1)*2
+            unique_count = len(unique_cells)
+            total_len = sum(lengths)
+            # 优先最大连线长度，其次唯一消除格数，再次总连线长度
+            score = max_len * 1000 + unique_count * 10 + total_len
         return score, matches
 
     def find_best_move(self, board: np.ndarray) -> Tuple[Optional[Move], int, List[List[Tuple[int,int]]]]:

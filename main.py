@@ -88,7 +88,7 @@ def main_loop():
 		print_board(board, highlight=highlight, underline=True)
 		ACTIONS.swap_tiles(*move)
 		print('[STEP] 等待分数区域稳定...')
-		time.sleep(1)
+		# time.sleep(1)
 		SCORE_CHECKER.wait_stable()
 	print('[INFO] 结束')
 
