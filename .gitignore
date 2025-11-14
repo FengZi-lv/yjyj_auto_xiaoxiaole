@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.env
+.venv
+venv/
+env/
+ENV/
+
+# Packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Test & coverage
+.pytest_cache/
+.mypy_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Caches & logs
+.cache/
+logs/
+*.log
+
+# IDE & Editor
+.vscode/
+.idea/
+*.code-workspace
+*.swp
+.history/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Tools
+pip-wheel-metadata/
+
+# Project-specific
+config.json
+arduino_auto_click.ino
