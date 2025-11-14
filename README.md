@@ -9,6 +9,11 @@
 
 本项目在 Windows 上通过模板匹配识别 6x6 棋盘，并使用 Arduino 作为 USB HID 设备执行鼠标移动与点击，自动完成“相邻交换→达成三连→等待动画结束”的循环。
 
+<img width="3839" height="2090" alt="屏幕截图 2025-11-14 114258" src="https://github.com/user-attachments/assets/97dbce9e-8fa5-4f86-8d94-26aca4a5d631" />
+
+
+**视频效果**：[小黑盒](https://api.xiaoheihe.cn/v3/bbs/app/api/web/share?link_id=a57771235b2f)
+
 ---
 
 ## 1. 环境准备
